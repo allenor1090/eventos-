@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Your Party</title>
+    <link rel="icon" type="imagen/x-icon" href="imagenes/logocp.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="imagenes/logocp.ico" alt="logo de la compañia">
+                <h2 class="nombre-empresa">Your Party</h2>
+            </a>
+        </nav>
+        <nav>
+            <a class="active" href="index.html">Inicio</a>
+            <a href="personal.html">Equipo de trabajo</a>
+            <a href="empleos.html">Trabaja con Nosotros </a>
+            <a href="productos.html">Servicios </a>
+            <a href="saludos.html">Opiniones</a>
+            <a href="acercade.html">Acerca de</a>
+            <a href="creditos.html">Creditos</a>
+        </nav>
+    </header>
+
+
+    <div class="main-image">
+        <div class="container">
+            <h1><span>Pública tu Oferta</span></h1>
+            <span class="cen">Cuentanos sobre lo que necesitas</span>
+        </div>
+    </div>
+    <div>
+        <h1 class="titulo">
+            ¡Organiza Tus fiestas con nosotros!
+        </h1>
+    </div>
+
+    <div class="container-fluid" style="font-weight: 600;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mt-4 ">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="card ">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="text-align: center;">Aplicación</h5>
+                                        <!--Aquí va el formulario-->
+                                        <form role="form">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">
+                                                    Nombre:
+                                                </label>
+                                                <input type="text" class="form-control" id="nombre" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">
+                                                    Cargo:
+                                                </label>
+                                                <input type="text" class="form-control" id="cargo" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">
+                                                    Descripción de cualidades:
+                                                </label>
+                                                <textarea id="texto_empleos" cols="30" rows="10"
+                                                    class="form-control"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <br>
+                                                <input type="submit" value="Registrar" class="btn btn-primary"
+                                                    runat="server" onclick="registrarEmpleo()" id="submitButton" />
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 mt-4">
+                        <div id="empleos" style="display: block;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/empleos.js"></script>
+
+
+</body>
+
+</html>
